@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/notes_view.dart';
+import 'features/notes/presentation/views/notes_view.dart';
 
 void main() {
   runApp(DevicePreview(
