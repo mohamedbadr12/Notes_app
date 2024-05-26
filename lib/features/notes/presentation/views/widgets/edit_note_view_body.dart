@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/features/notes/presentation/views/widgets/custom_app_bar.dart';
+import 'package:notes_app/features/notes/presentation/views/widgets/custom_text_form_field.dart';
 
 class EditNoteViewBody extends StatelessWidget {
   const EditNoteViewBody({super.key});
@@ -10,7 +11,11 @@ class EditNoteViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 50,),
-          CustomAppBar(title: "Edit Note",icon:Icons.done ,)
+          CustomAppBar(title: "Edit Note",icon:Icons.done ,),
+          SizedBox(height: 50,),
+          CustomTextFormField(hintText: "Title"),
+          SizedBox(height: 16,),
+          CustomTextFormField(hintText: "Content",maxLines: 5,),
 
         ],
       ),
