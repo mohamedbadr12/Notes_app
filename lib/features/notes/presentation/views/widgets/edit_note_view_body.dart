@@ -7,15 +7,19 @@ class EditNoteViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(padding: EdgeInsets.symmetric(horizontal: 24),
+    return  Padding(padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          SizedBox(height: 50,),
-          CustomAppBar(title: "Edit Note",icon:Icons.done ,),
-          SizedBox(height: 50,),
-          CustomTextFormField(hintText: "Title"),
-          SizedBox(height: 16,),
-          CustomTextFormField(hintText: "Content",maxLines: 5,),
+          const SizedBox(height: 50,),
+          const CustomAppBar(title: "Edit Note",icon:Icons.done ,),
+          const SizedBox(height: 50,),
+          CustomTextFormField(hintText: "Title",onSaved: (value){
+
+          }),
+          const SizedBox(height: 16,),
+          CustomTextFormField(hintText: "Content",maxLines: 5,onSaved: (value){
+
+          },),
 
         ],
       ),
