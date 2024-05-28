@@ -8,17 +8,3 @@ abstract class NotesState extends Equatable {
 }
 
 class NotesInitial extends NotesState {}
-
-class NotesLoading extends NotesState {}
-
-class NotesSuccess extends NotesState {
-  final List<NoteModel> notes;
-
-  const NotesSuccess({required this.notes});
-}
-
-class NotesFailure extends NotesState {
-  final String error;
-
-  const NotesFailure({required this.error});
-}
